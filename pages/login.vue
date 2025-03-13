@@ -31,9 +31,11 @@
 import { useAuth } from '@/composables/useAuth';
 import { ref } from 'vue';
 import { useToast } from 'vue-toastification';
+// import Toast from 'vue-toastification';
 import ProgressSpinner from 'primevue/progressspinner';
 
 const toast = useToast();
+// const toast = Toast.useToast();
 const { login } = useAuth();
 const usernameOrEmail = ref('');
 const password = ref('');

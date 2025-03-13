@@ -50,7 +50,8 @@ import Aura from '@primevue/themes/aura';
 export default defineNuxtConfig({
   // modules: ["@nuxtjs/tailwindcss"],
   compatibilityDate: '2025-01-29',
-  css: ['~/assets/css/main.css', 'vue-toastification/dist/index.css'],
+  css: ['~/assets/css/main.css',],
+  // css: ['~/assets/css/main.css',],
   vite: {
     plugins: [tailwindcss()],
   },
@@ -61,5 +62,8 @@ export default defineNuxtConfig({
         preset: Aura
       }
     }
-  }
+  },
+  build: {
+    transpile: ['vue-toastification'],
+  },
 });
