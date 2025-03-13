@@ -1,0 +1,34 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.23",
+    "@primevue/themes": "^4.2.5",
+    "@tailwindcss/vite": "^4.0.5",
+    "axios": "^1.7.9",
+    "cookie": "^1.0.2",
+    "js-cookie": "^3.0.5",
+    "jwt-decode": "^4.0.0",
+    "nuxt": "^3.15.3",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.2.5",
+    "tailwindcss": "^4.0.5",
+    "vue": "latest",
+    "vue-router": "latest",
+    "vue-toastification": "2.0.0-rc.5"
+  },
+  "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0",
+  "devDependencies": {
+    "@primevue/nuxt-module": "^4.2.5",
+    "@types/cookie": "^1.0.0",
+    "@types/js-cookie": "^3.0.6"
+  }
+}
