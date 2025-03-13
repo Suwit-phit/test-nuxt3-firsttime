@@ -1,11 +1,15 @@
-import { defineNuxtPlugin } from '#app'
-import Toast from 'vue-toastification'
-import 'vue-toastification/dist/index.css' // if needed
+//? new
+// import { defineNuxtPlugin } from '#app'
+// import Toast from 'vue-toastification'
+// import 'vue-toastification/dist/index.css' // if needed
 
-export default defineNuxtPlugin((nuxtApp) => {
-    nuxtApp.vueApp.use(Toast)
-})
+// export default defineNuxtPlugin((nuxtApp) => {
+//     nuxtApp.vueApp.use(Toast)
+// })
 
+
+
+//! old
 // import Toast from "vue-toastification";
 // import "vue-toastification/dist/index.css";
 // import { defineNuxtPlugin } from "#app";
