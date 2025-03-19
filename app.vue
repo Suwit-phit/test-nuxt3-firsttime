@@ -26,8 +26,22 @@
     <NuxtWelcome />
   </div>
 </template> -->
+
+<!-- <template>
+  <div>
+    <NuxtPage />
+  </div>
+</template> -->
+
+<!-- <script setup>
+definePageMeta({
+  middleware: ['auth']
+});
+</script> -->
+
 <template>
   <div>
     <NuxtPage />
   </div>
 </template>
+

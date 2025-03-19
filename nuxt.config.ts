@@ -66,4 +66,9 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vue-toastification'],
   },
+  // router: {
+  //   options: {
+  //     middleware: ['auth'] // Ensure this is included
+  //   }
+  // }
 });

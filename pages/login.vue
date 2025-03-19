@@ -65,6 +65,10 @@ const onLogin = async () => {
 const goToRegister = () => {
     navigateTo('/register');
 };
+
+// definePageMeta({
+//   middleware: ['auth'], // Ensures auth middleware runs before entering the page
+// });
 </script>
 
 

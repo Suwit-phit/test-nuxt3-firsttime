@@ -12,17 +12,36 @@
 //     }
 // });
 
+// This is auth.ts just working in single page
 export default defineNuxtRouteMiddleware((to, from) => {
-    const accessToken = useCookie('accessToken'); // useCookie works SSR & CSR
+    const accessToken = useCookie('accessToken'); // useCookie works for SSR & CSR
 
-    // Ensure we check properly
+    if (accessToken.value && to.name === 'login') {
+        console.log("User is already logged in, redirecting to home...");
+        return navigateTo('/'); // Redirect to home or another protected page
+    }
+
     if (!accessToken.value && to.name !== 'login') {
-        console.log("inside auth middleware: no token found, redirecting...");
+        console.log("No token found, redirecting to login...");
         return navigateTo('/login');  
     }
 
-    console.log("inside auth middleware: token found, proceeding...");
+    console.log("Proceeding...");
+    // console.log("✅ Proceeding to page...");
 });
+
+
+// export default defineNuxtRouteMiddleware((to, from) => {
+//     const accessToken = useCookie('accessToken'); // useCookie works SSR & CSR
+
+//     // Ensure we check properly
+//     if (!accessToken.value && to.name !== 'login') {
+//         console.log("inside auth middleware: no token found, redirecting...");
+//         return navigateTo('/login');  
+//     }
+
+//     console.log("inside auth middleware: token found, proceeding...");
+// });
 
 
 

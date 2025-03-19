@@ -485,9 +485,9 @@ watch(expired, (newVal) => {
     }
 });
 
-definePageMeta({
-    middleware: ['auth'], // This page requires authentication
-})
+// definePageMeta({
+//     middleware: ['auth'], // This page requires authentication
+// })
 </script>
 
 <!-- <p v-if="owner">Username: {{ owner.username }}</p>
